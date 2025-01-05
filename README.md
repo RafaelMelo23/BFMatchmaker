@@ -43,3 +43,4 @@ Galactic Matchmaker is a web-based application designed to unite players of a sm
 3. Submit to save.
 
 --- 
+* This repository is just a demonstration version, since the real one contains sensitive information regarding its host server and some website configuration. This one was made without these files
