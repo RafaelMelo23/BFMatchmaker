@@ -1,0 +1,22 @@
+.chart-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 50px; 
+    height: 100vh;
+    padding-bottom: 150px;
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        padding: 0 15px; 
+        width: 100vw; 
+        max-width: 100%; 
+        box-sizing: border-box;
+    }
+
+    canvas { 
+        max-width: 100%; 
+        height: auto; 
+    }
+}

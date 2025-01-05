@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #F7F7F7, #FFFFFF); /* Background gradient */
+    font-family: 'Mulish', sans-serif;
+}
+
+.register-container {
+    width: 400px;
+    height: 500px;
+    padding: 40px;
+    text-align: center;
+    position: relative; /* Needed for absolute positioning of back button */
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;  /* Margem de 10px do topo */
+    left: 10px; /* Margem de 10px da esquerda */
+    display: flex;
+    align-items: center;
+    background: #000; /* Black background */
+    color: #fff;
+    border: none;
+    border-radius: 9px; /* Rounded corners */
+    padding: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+.back-button:hover {
+    background: #FFC412; /* Yellow background on hover */
+    color: #000; /* Black text on hover */
+}
+
+.back-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 3px; /* Space between icon and text */
+    font-size: 20px;
+}
+
+.back-text {
+    font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in element's width/height calculation */
+    background: linear-gradient(to right, #BAB8B9, #C1C1C1); /* Gradient from left to right */
+    border: none; /* Remove the outline */
+    color: #000;
+}
+
+.register-container input[type="submit"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 15px;
+    background-color: #000; /* Black background */
+    border: 2px solid #000; /* Black border */
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.register-container input[type="submit"]:hover {
+    border: 2px solid #FFC412; /* Yellow border on hover */
+}
+
+.register-container .error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.register-container a {
+    display: inline-block; /* Changed to inline-block */
+    margin-top: 10px;
+    color: #000; /* Black link color */
+    text-decoration: none;
+    position: relative; /* For the ::before positioning */
+    padding: 5px 10px; /* Padding to add space around the text */
+}
+
+.register-container a::before {
+    content: "";
+    position: absolute;
+    top: -1px; /* Adjusted to make it 1px thicker */
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background-color: #FFC412;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.register-container a:hover::before {
+    visibility: visible;
+}
+
+.error-messages {
+    margin-top: 15px; /* Adds some space above the error messages */
+}
+
+.error-messages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.error-messages li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.error-messages li:last-child {
+    border-bottom: none;
+}
+
+.error-messages .error {
+    color: red;
+    margin-bottom: 15px; 
+}

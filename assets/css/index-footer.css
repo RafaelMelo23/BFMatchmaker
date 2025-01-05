@@ -1,0 +1,25 @@
+/* Garantir que o corpo ocupe toda a altura */
+html, body {
+    margin: 0;
+    height: 100%; /* Altura total do corpo */
+}
+
+/* Contêiner principal */
+.wrapper {
+    display: flex;
+    flex-direction: column; /* Organiza os filhos verticalmente */
+    min-height: 100vh; /* Altura mínima igual à altura da viewport */
+}
+
+/* Área de conteúdo */
+.content {
+    flex: 1; /* Permite que o conteúdo cresça e preencha o espaço */
+}
+
+/* Estilos do footer */
+.index-footer {
+    background-color: white; /* Cor de fundo preferida */
+    padding: 20px;
+    text-align: center; /* Centraliza o texto no footer */
+    border-top: 2px solid yellow; /* Divisor amarelo opcional */
+}

@@ -1,0 +1,23 @@
+
+        /* Basic styles for the form */
+        .day-link {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 15px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: #f0f8ff;
+            text-decoration: none;
+            color: #007bff;
+            transition: background-color 0.3s;
+        }
+        .day-link.selected {
+            background-color: #007bff;
+            color: white;
+        }
+        .game-mode {
+            margin: 10px 0;
+        }
+        .specific-time-container {
+            margin: 20px 0;
+        }

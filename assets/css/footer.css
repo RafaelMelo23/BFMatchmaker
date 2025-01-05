@@ -1,0 +1,121 @@
+/* Set basic styles for the html and body */
+
+html, body {
+
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+
+    height: 100%; /* Full height for body */
+
+    display: flex; /* Use flexbox on body */
+
+    flex-direction: column; /* Stack children vertically */
+
+}
+
+
+
+/* Wrapper to contain content and footer */
+
+.wrapper {
+
+    flex: 1; /* Allow the wrapper to grow and fill available space */
+
+    display: flex; /* Enable flexbox */
+
+    flex-direction: column; /* Stack content and footer vertically */
+
+}
+
+
+
+/* Main content area */
+
+.content {
+
+    flex: 1; /* Allow the content area to grow */
+
+    padding: 20px; /* Optional padding for content */
+
+}
+
+
+
+/* Footer styling */
+
+footer {
+
+    color: black; 
+    font-family: "Mulish", sans-serif;
+    text-align: center; 
+    width: 100%; 
+    padding: 10px 0; 
+
+}
+
+
+
+/* Copyright text styles */
+
+footer .copyright {
+
+    font-weight: bold; /* Bold copyright text */
+
+    margin-bottom: 5px; /* Bottom margin */
+
+}
+
+
+
+/* Disclaimers container */
+
+.disclaimer-container {
+
+    width: 80%; /* Width of the disclaimer container */
+
+    max-width: 1200px; /* Maximum width */
+
+    margin: 0 auto; /* Center the container */
+
+}
+
+
+
+/* Individual disclaimers styling */
+
+footer .disclaimers, footer .longer {
+
+    padding: 15px 10px; /* Padding */
+
+    border-bottom: 2px solid rgb(0, 0, 0); /* Yellow divider */
+
+    text-align: center; /* Center text */
+
+    min-height: 60px; /* Minimum height */
+
+}
+
+
+
+/* Remove bottom border from the last disclaimer */
+
+footer .disclaimer-container p:last-child {
+
+    border-bottom: none; /* No border for last disclaimer */
+
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    footer .disclaimer-container {
+
+        width: 95%; /* Adjust for smaller screens */
+
+    }
+
+}
+
